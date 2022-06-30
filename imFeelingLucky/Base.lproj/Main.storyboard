@@ -376,6 +376,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="scc-n5-amt"/>
         <segue reference="IQv-v1-u4l"/>
     </inferredMetricsTieBreakers>
     <resources>
