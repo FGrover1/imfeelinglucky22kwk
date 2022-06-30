@@ -1,13 +1,13 @@
 //
-//  FourthViewController.swift
+//  FifthViewController.swift
 //  imFeelingLucky
 //
-//  Created by Scholar on 6/29/22.
+//  Created by Scholar on 6/30/22.
 //
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class FifthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +15,16 @@ class FourthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var label: UILabel!
     
-    @IBOutlet weak var labelOne: UILabel!
     
-    @IBAction func buttonOne(_ sender: Any) {
-        
-        var luckyNumber = Int.random(in: 0...101)
+    @IBAction func button(_ sender: Any) {
+        var luckyNumber = Int.random(in: 0..<101)
         var randomNumber = String(luckyNumber)
-        labelOne.text = randomNumber
+        label.text = randomNumber
     }
+    
+    
     
     /*
     // MARK: - Navigation
@@ -34,6 +35,5 @@ class FourthViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    //text
 
 }

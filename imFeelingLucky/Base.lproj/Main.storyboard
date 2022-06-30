@@ -95,7 +95,7 @@
                                     <color key="baseBackgroundColor" red="0.63921568630000003" green="0.14901960780000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="5qc-ji-sEr" kind="presentation" modalPresentationStyle="fullScreen" id="fOY-dM-0hQ"/>
+                                    <segue destination="VlK-ZZ-Z54" kind="presentation" modalPresentationStyle="fullScreen" id="kNw-Cy-t8B"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-GO-kVg">
@@ -206,35 +206,14 @@
             </objects>
             <point key="canvasLocation" x="-520.28985507246375" y="837.72321428571422"/>
         </scene>
-        <!--Fourth View Controller-->
-        <scene sceneID="goY-It-2ak">
+        <!--Fifth View Controller-->
+        <scene sceneID="pxX-nl-Pyk">
             <objects>
-                <viewController id="5qc-ji-sEr" customClass="FourthViewController" customModule="imFeelingLucky" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="VCe-mw-lp8">
+                <viewController id="VlK-ZZ-Z54" customClass="FifthViewController" customModule="imFeelingLucky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oPq-7O-dgQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-dd-G1D">
-                                <rect key="frame" x="56" y="458" width="303" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="tell me my lucky #">
-                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
-                                    <color key="baseForegroundColor" red="0.63921568630000003" green="0.14901960780000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonOne:" destination="5qc-ji-sEr" eventType="touchUpInside" id="RUG-MI-hWy"/>
-                                    <action selector="tellMyFortuneButton:" destination="wml-2o-Y2u" eventType="touchUpInside" id="CVh-VA-z0Y"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-Jh-xzc">
-                                <rect key="frame" x="90" y="346" width="234" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99215686274509807" green="0.92156862745098034" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJW-za-EeU">
                                 <rect key="frame" x="20" y="44" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -245,33 +224,52 @@
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="8Je-3u-PfP"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="beB-fe-MAE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luck is on your side today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmu-vQ-hHw">
-                                <rect key="frame" x="32" y="135" width="350" height="101"/>
+                                <rect key="frame" x="32" y="114" width="350" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-Jh-xzc">
+                                <rect key="frame" x="90" y="271" width="234" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.92156862745098034" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-dd-G1D">
+                                <rect key="frame" x="56" y="419" width="303" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="tell me my lucky #">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                    <color key="baseForegroundColor" red="0.63921568630000003" green="0.14901960780000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="VlK-ZZ-Z54" eventType="touchUpInside" id="bFZ-VI-WyH"/>
+                                    <action selector="tellMyFortuneButton:" destination="wml-2o-Y2u" eventType="touchUpInside" id="CVh-VA-z0Y"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-14" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-8g-hB7">
-                                <rect key="frame" x="-30" y="458" width="594" height="577"/>
+                                <rect key="frame" x="20" y="486" width="489" height="466"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ytd-bT-f00"/>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ygc-RG-a4h"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rwv-du-v3X"/>
                     <connections>
-                        <outlet property="labelOne" destination="7dz-Jh-xzc" id="KYL-gu-gRf"/>
+                        <outlet property="label" destination="7dz-Jh-xzc" id="vHE-OO-XL0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9oj-be-H4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruE-K8-uTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.69565217391312" y="837.72321428571422"/>
+            <point key="canvasLocation" x="809" y="838"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Kgf-dS-3lS">
@@ -376,8 +374,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="scc-n5-amt"/>
-        <segue reference="IQv-v1-u4l"/>
+        <segue reference="beB-fe-MAE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1080" height="1920"/>
