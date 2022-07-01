@@ -51,12 +51,7 @@ class SecondViewController: UIViewController {
         }
         answer.text = randomizer(array: optionStrings)
         
-
-        
     }
-     
-    
-    
     
     
     @IBOutlet weak var answer: UILabel!
