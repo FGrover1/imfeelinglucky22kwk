@@ -89,7 +89,7 @@ class SixthViewController: UIViewController {
        else if(month==11 && day < 23 || month==12 && day < 22){
          return ("sagittarius:️ you are very outgoing and known for your enthusiasm")
        }
-       else if (month==12 && day < 23 || month==1 && day > 20){
+       else if (month==12 && day < 23 || month==1 && day < 20){
          return ("capricorn:️ congrats :tada: you're the rarest sign!")
        }
         return("no.")
