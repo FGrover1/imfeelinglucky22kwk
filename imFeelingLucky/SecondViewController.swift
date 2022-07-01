@@ -8,7 +8,11 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var imageOne: UIImageView!
+    
+    @IBOutlet weak var imageTwoleft: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +45,15 @@ class SecondViewController: UIViewController {
      
     
     @IBAction func Submit(_ sender: Any) {
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.imageTwoleft.frame.origin.x -= 160
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.imageOne.frame.origin.x += 160
+        }, completion: nil)
+        
         let options = [TextField1, TextField2, TextField3, TextField4]
         
         var optionStrings = [String]()
@@ -51,6 +64,7 @@ class SecondViewController: UIViewController {
         }
         answer.text = randomizer(array: optionStrings)
         
+    
     }
     
     
